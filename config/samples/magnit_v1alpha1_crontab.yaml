@@ -1,0 +1,12 @@
+apiVersion: magnit.magnit.com/v1alpha1
+kind: CronTab
+metadata:
+  labels:
+    app.kubernetes.io/name: crontab
+    app.kubernetes.io/instance: crontab-sample
+    app.kubernetes.io/part-of: crontab-operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: crontab-operator
+  name: crontab-sample
+spec:
+  # TODO(user): Add fields here
