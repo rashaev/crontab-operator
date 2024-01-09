@@ -68,7 +68,7 @@ func (r *CronTabReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ct
 	err = r.Get(ctx, req.NamespacedName, cronjob)
 	if err != nil && errors.IsNotFound(err) {
 		create = true
-		cronjob = assets.GetCronJobFromFile("assets/cronjob.yaml")
+		cronjob = assets.GetCronJobFromFile("manifests/cronjob.yaml")
 	} else if err != nil {
 		logger.Error(err, "Error getting existing CronTab")
 		return ctrl.Result{}, err
