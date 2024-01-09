@@ -7,7 +7,7 @@ rules:
 - apiGroups:
   - batch
   resources:
-  - cronjob
+  - cronjobs
   verbs:
   - create
   - delete

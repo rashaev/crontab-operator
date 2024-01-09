@@ -40,7 +40,7 @@ type CronTabReconciler struct {
 //+kubebuilder:rbac:groups=magnit.magnit.com,resources=crontabs,verbs=get;list;watch;create;update;patch;delete
 //+kubebuilder:rbac:groups=magnit.magnit.com,resources=crontabs/status,verbs=get;update;patch
 //+kubebuilder:rbac:groups=magnit.magnit.com,resources=crontabs/finalizers,verbs=update
-//+kubebuilder:rbac:groups=batch,resources=cronjob,verbs=get;list;watch;create;update;patch;delete
+//+kubebuilder:rbac:groups=batch,resources=cronjobs,verbs=get;list;watch;create;update;patch;delete
 
 // Reconcile is part of the main kubernetes reconciliation loop which aims to
 // move the current state of the cluster closer to the desired state.
